@@ -1,0 +1,64 @@
+site_name: My Documentation
+site_description: Documentation for my project
+site_author: Vinod Kumar
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.tabs.link
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - sane_lists
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.details
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.keys
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.magiclink
+  - pymdownx.snippets
+  - pymdownx.highlight
+  - pymdownx.tilde
+  - pymdownx.emoji
+  - tables
+  - footnotes
+  - def_list
+  - toc:
+      permalink: true
+
+nav:
+  - Home: index.md
+
+  - Getting Started:
+      - Installation: getting_started/installation.md
+      - Prerequisites: getting_started/prerequisites.md
+      - Quick Start: getting_started/quick-start.md
+
+  - User Guide:
+      - Overview: user_guide/overview.md
+      - Features: user_guide/features.md
+      - Troubleshooting: user_guide/troubleshooting.md
+
+  - Developer Guide:
+      - Architecture: developer_guide/architecture.md
+      - API: developer_guide/api.md
+      - Deployment: developer_guide/deployment.md
+
+  - Reference:
+      - Configuration: reference/configuration.md
+      - Glossary: reference/glossary.md
